@@ -3313,7 +3313,7 @@
 /* CTA */
 
 	#cta {
-		background: #e7a8ab;
+		background: #7c7c7c;
 		color: #f9e6df;
 		padding: 3.5em 0 4em 0;
 		text-align: center;
@@ -3335,7 +3335,7 @@
 		#cta .button {
 			box-shadow: none;
 			background: #fff;
-			color: #e89980;
+			color: #7c7c7c;
 		}
 
 		#cta input[type="text"],
