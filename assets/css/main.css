@@ -8,7 +8,22 @@
 	margin-bottom: 10px;
   }
 
- #portfolio 
+  #page-wrapper .hale{
+	  margin: 3em;
+	  font-family: "Source Sans Pro", sans-serif;
+	  text-align: center;
+  }
+
+  #page-wrapper .hale div div p{
+	margin: 3em;
+	font-family: "Source Sans Pro", sans-serif;
+	text-align: center;
+	text-align: justify;
+}
+
+
+
+
 /*
 	Alpha by HTML5 UP
 	html5up.net | @ajlkn

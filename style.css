@@ -3,8 +3,8 @@ body{
 }
 .item_header{
     display: flex;
-    width: 1000px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 20px auto;
     height: 30px;
     background-color: #fff;
     border-radius: 3px;

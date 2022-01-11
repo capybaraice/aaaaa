@@ -28,7 +28,7 @@
 	form, label, legend, table, caption, tbody,
 	tfoot, thead, tr, th, td, article, aside,
 	canvas, details, embed, figure, figcaption,
-	footer, header, hgroup, menu, nav, output, ruby,
+	 header, hgroup, menu, nav, output, ruby,
 	section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
@@ -39,7 +39,7 @@
 	}
 
 	article, aside, details, figcaption, figure,
-	footer, header, hgroup, menu, nav, section {
+	 header, hgroup, menu, nav, section {
 		display: block;
 	}
 
@@ -2580,5 +2580,53 @@
 			#cta {
 				padding: 2.5em 1em 3em 1em;
 			}
+
+			/* Footer */
+
+	#footer {
+		background: #f0f0f0;
+		padding: 4em 0 6em 0;
+		text-align: center;
+	}
+
+		#footer .icons a {
+			-moz-transition: opacity 0.2s ease-in-out;
+			-webkit-transition: opacity 0.2s ease-in-out;
+			-ms-transition: opacity 0.2s ease-in-out;
+			transition: opacity 0.2s ease-in-out;
+			opacity: 0.35;
+		}
+
+			#footer .icons a:hover {
+				opacity: 0.75;
+			}
+
+		#footer .copyright {
+			color: #999;
+			font-size: 0.9em;
+			line-height: 1em;
+			margin: 2em 0 0 0;
+			padding: 0;
+			text-align: center;
+		}
+
+			#footer .copyright a {
+				color: inherit;
+			}
+
+			#footer .copyright li {
+				border-left: solid 1px #dddddd;
+				display: inline-block;
+				list-style: none;
+				margin-left: 1em;
+				padding-left: 1em;
+			}
+
+				#footer .copyright li:first-child {
+					border-left: 0;
+					margin-left: 0;
+					padding-left: 0;
+				}
+
 
 	}
