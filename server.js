@@ -12,6 +12,7 @@ var DB = require("nedb-promises");
 var Users = DB.create("users.db")//引入db
 var Contact = DB.create("contact.db")//
 
+
 server.get("/portfolio", function(req, res){
     portfolios= [
     ]
@@ -33,3 +34,6 @@ server.post("/contact_me", function(req, res){
 server.listen(80, function(){
     console.log("Server is running at port 8080!")
 })
+
+
+

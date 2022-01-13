@@ -127,9 +127,21 @@
 		<section id="main" class="container medium">
 			<header>
 				<h2>查看問題回報</h2>
-				
+				<a href="" onclick="getTeamData()">點擊獲取資料</a>
+				<div class="row">
+					<div class="col">姓名</div>
+					<div class="col">手機</div>
+					<div class="col">信箱</div>
+					<div class="col">問題</div>
+				</div>
+				<div class="row">
+					<div class="col">{{item.username}}</div>
+					<div class="col">{{item.phone}}</div>
+					<div class="col">{{item.email}}</div>
+					<div class="col">{{item.message}}</div>
+				</div>
 			</header>
-			
+
 		</section>
 
 
@@ -175,15 +187,28 @@
 
 	<script>
 
-
-		$.ajax({
-			url: "/portfolio",
-			method: "get",
-			dataType: "json",
-			success: function (data) {
-				portfolio.portfolios = data;
+		var team = new Vue({
+			el: "#team",
+			data: {
+				teams: []
 			}
 		})
+
+		function getTeamData() {
+			if ($("#team").is(":visible"))
+				return;
+			$.ajax({
+				//url: "https://ilab.nutc.edu.tw/users",
+				url: "/users",
+				method: "get",
+				dataType: "json",
+				data: { is: 1 },
+				success: function (users) {
+					team.teams = users;
+				}
+			})
+
+		}
 	</script>
 
 </body>
